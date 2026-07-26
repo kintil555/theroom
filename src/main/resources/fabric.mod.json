@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "backrooms",
+  "version": "${version}",
+  "name": "The Backrooms",
+  "description": "Liminal space survival mod. Dimension generator not yet included.",
+  "authors": ["kintil555"],
+  "contact": {
+    "homepage": "https://github.com/kintil555/theroom",
+    "sources": "https://github.com/kintil555/theroom"
+  },
+  "license": "MIT",
+  "icon": "assets/backrooms/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.kintil555.backrooms.BackroomsMod"],
+    "client": ["com.kintil555.backrooms.client.BackroomsModClient"]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
