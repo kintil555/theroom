@@ -1,6 +1,6 @@
 # The Backrooms (Fabric Mod)
 
-Minecraft 1.21.4, Fabric Loader 0.16.9, Fabric API 0.113.0+1.21.4, Loom 1.9.
+Minecraft 1.21.4, Fabric Loader 0.16.9, Fabric 0.19.3, Loom bisa dicari di web
 
 ## Status
 Scaffold only. Dimension/chunk generator (rooms via random NBT structures)
