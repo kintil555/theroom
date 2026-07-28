@@ -13,17 +13,5 @@
   "terrain_adaptation": "none",
   "use_expansion_hack": false,
   "project_start_to_heightmap": null,
-  "spawn_overrides": {},
-  "pool_aliases": [
-    {
-      "type": "minecraft:random",
-      "alias": "minecraft:empty",
-      "targets": [
-        {
-          "weight": 1,
-          "data": "backrooms:level0/rooms"
-        }
-      ]
-    }
-  ]
+  "spawn_overrides": {}
 }

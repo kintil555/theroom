@@ -1,0 +1,122 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_1",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_2",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_3",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_4",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_5",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_6",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_7",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_8",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_9",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_upstairs",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 6
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/hugeroom",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/hugeroompitfalls",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/hugeroompitfallschairs",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ]
+}
