@@ -3,7 +3,7 @@
   "id": "backrooms",
   "version": "${version}",
   "name": "The Backrooms",
-  "description": "Liminal space survival mod. Dimension generator not yet included.",
+  "description": "Liminal space survival mod with a jigsaw-generated Backrooms dimension.",
   "authors": ["kintil555"],
   "contact": {
     "homepage": "https://github.com/kintil555/theroom",

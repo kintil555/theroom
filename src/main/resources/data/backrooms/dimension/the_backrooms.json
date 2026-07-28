@@ -1,0 +1,21 @@
+{
+  "type": "backrooms:the_backrooms",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "backrooms:the_backrooms",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:air",
+          "height": 127
+        }
+      ]
+    }
+  }
+}

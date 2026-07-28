@@ -1,15 +1,19 @@
 package com.kintil555.backrooms;
 
+import com.kintil555.backrooms.command.BackroomsCommand;
 import com.kintil555.backrooms.config.BackroomsConfig;
 import com.kintil555.backrooms.registry.ModItemGroups;
 import com.kintil555.backrooms.registry.ModItems;
 import com.kintil555.backrooms.registry.ModSounds;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
 /**
- * Common entrypoint. Registers items, item groups and sounds.
- * Dimension/chunk generator, entities and the noclip/level system are
- * intentionally left out until the structure NBTs are ready.
+ * Common entrypoint. Registers items, item groups, sounds, and the
+ * /backrooms enter|leave command. The dimension itself (type, generator,
+ * jigsaw structure) is entirely data-driven under data/backrooms and
+ * needs no runtime registration beyond the RegistryKey used by the
+ * command to look the world up.
  */
 public final class BackroomsMod implements ModInitializer {
 
@@ -21,6 +25,8 @@ public final class BackroomsMod implements ModInitializer {
         ModSounds.register();
         ModItems.register();
         ModItemGroups.register();
+        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
+                BackroomsCommand.register(dispatcher));
 
         Backrooms.LOGGER.info("Backrooms mod ready ({} items registered)", ModItems.count());
     }
