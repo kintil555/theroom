@@ -9,6 +9,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 
 /**
@@ -40,8 +41,8 @@ public class AlmondWaterItem extends Item {
     }
 
     @Override
-    public net.minecraft.item.UseAction getUseAction(ItemStack stack) {
-        return net.minecraft.item.UseAction.DRINK;
+    public UseAction getUseAction(ItemStack stack) {
+        return UseAction.DRINK;
     }
 
     @Override
