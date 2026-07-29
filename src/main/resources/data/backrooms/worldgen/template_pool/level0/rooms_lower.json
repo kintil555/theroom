@@ -1,5 +1,6 @@
 {
   "fallback": "minecraft:empty",
+  "next": "backrooms:level0/rooms_lower",
   "elements": [
     {
       "element": {
@@ -81,6 +82,15 @@
         "projection": "rigid"
       },
       "weight": 40
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_downstairs",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 6
     }
   ]
 }

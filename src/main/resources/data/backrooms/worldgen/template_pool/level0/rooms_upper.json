@@ -1,5 +1,6 @@
 {
   "fallback": "minecraft:empty",
+  "next": "backrooms:level0/rooms_upper",
   "elements": [
     {
       "element": {
