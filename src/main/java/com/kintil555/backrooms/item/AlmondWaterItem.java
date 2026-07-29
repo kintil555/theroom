@@ -40,8 +40,8 @@ public class AlmondWaterItem extends Item {
     }
 
     @Override
-    public net.minecraft.util.UseAction getUseAction(ItemStack stack) {
-        return net.minecraft.util.UseAction.DRINK;
+    public net.minecraft.item.UseAction getUseAction(ItemStack stack) {
+        return net.minecraft.item.UseAction.DRINK;
     }
 
     @Override
