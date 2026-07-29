@@ -4,7 +4,7 @@
   "size": 7,
   "max_distance_from_center": 80,
   "start_height": {
-    "absolute": 1
+    "absolute": 0
   },
   "biomes": "backrooms:the_backrooms",
   "step": "underground_structures",
