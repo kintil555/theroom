@@ -86,15 +86,6 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "backrooms:level0/room_upstairs",
-        "processors": "minecraft:empty",
-        "projection": "rigid"
-      },
-      "weight": 6
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
         "location": "backrooms:level0/hugeroom",
         "processors": "minecraft:empty",
         "projection": "rigid"
