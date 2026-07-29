@@ -31,7 +31,7 @@ public class AlmondWaterItem extends Item {
     public ItemStack finishUsing(ItemStack stack, World world, net.minecraft.entity.LivingEntity user) {
         if (!world.isClient) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 0));
-            world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK,
+            world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK.value(),
                     SoundCategory.PLAYERS, 1.0F, 1.0F);
         }
         if (user instanceof net.minecraft.entity.player.PlayerEntity player && !player.getAbilities().creativeMode) {
