@@ -5,7 +5,7 @@
     "settings": {
       "biome": "backrooms:the_backrooms",
       "lakes": false,
-      "features": false,
+      "features": true,
       "layers": [
         {
           "block": "minecraft:bedrock",
