@@ -4,8 +4,7 @@
   "size": 7,
   "max_distance_from_center": 80,
   "start_height": {
-    "type": "minecraft:constant",
-    "value": 1
+    "absolute": 1
   },
   "biomes": "backrooms:the_backrooms",
   "step": "underground_structures",
