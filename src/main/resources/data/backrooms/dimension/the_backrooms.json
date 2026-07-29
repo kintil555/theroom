@@ -13,7 +13,7 @@
         },
         {
           "block": "minecraft:air",
-          "height": 127
+          "height": 255
         }
       ]
     }
