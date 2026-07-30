@@ -30,8 +30,6 @@ public final class ModItemGroups {
         ItemGroupEvents.modifyEntriesEvent(BACKROOMS_GROUP_KEY).register(entries -> {
             entries.add(ModItems.ALMOND_WATER);
             entries.add(ModItems.DUCT_TAPE);
-            entries.add(ModItems.BACKROOMS_KEY);
-            entries.add(ModItems.CRUMPLED_NOTE);
         });
 
         Backrooms.LOGGER.info("Registered Backrooms item group");

@@ -27,12 +27,6 @@ public final class ModItems {
     public static final Item DUCT_TAPE = register("duct_tape",
             settings -> new Item(settings.maxCount(64)));
 
-    public static final Item BACKROOMS_KEY = register("backrooms_key",
-            settings -> new Item(settings.maxCount(1)));
-
-    public static final Item CRUMPLED_NOTE = register("crumpled_note",
-            settings -> new Item(settings.maxCount(16)));
-
     private ModItems() {
     }
 
