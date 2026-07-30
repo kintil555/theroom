@@ -2,6 +2,7 @@ package com.kintil555.backrooms;
 
 import com.kintil555.backrooms.command.BackroomsCommand;
 import com.kintil555.backrooms.config.BackroomsConfig;
+import com.kintil555.backrooms.dimension.VoidFallHandler;
 import com.kintil555.backrooms.nullblock.NullBlockEntry;
 import com.kintil555.backrooms.registry.ModItemGroups;
 import com.kintil555.backrooms.registry.ModItems;
@@ -29,6 +30,7 @@ public final class BackroomsMod implements ModInitializer {
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) ->
                 BackroomsCommand.register(dispatcher));
         NullBlockEntry.register();
+        VoidFallHandler.register();
 
         Backrooms.LOGGER.info("Backrooms mod ready ({} items registered)", ModItems.count());
     }
