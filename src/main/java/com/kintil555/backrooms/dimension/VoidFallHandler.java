@@ -9,16 +9,18 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.TeleportTarget;
 import net.minecraft.world.World;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 
 /**
  * Watches players inside the_backrooms. Once a player falls below the
- * dimension's min_y (into the void under the generated floor), a 4 second
- * (80 tick) timer starts; if they are still below min_y when it expires
+ * dimension's min_y (into the void under the generated floor), a 1 second
+ * (20 tick) timer starts; if they are still below min_y when it expires
  * they are teleported to the overworld at their X/Z, Y=150.
  *
  * The timer resets if the player returns above min_y before it expires,
@@ -26,7 +28,7 @@ import java.util.UUID;
  */
 public final class VoidFallHandler {
 
-    private static final int TELEPORT_DELAY_TICKS = 80; // 4 seconds
+    private static final int TELEPORT_DELAY_TICKS = 20; // 1 second
     private static final double RETURN_Y = 150.0;
 
     private static final Map<UUID, Integer> fallTicks = new HashMap<>();
@@ -45,18 +47,26 @@ public final class VoidFallHandler {
         }
 
         int minY = backrooms.getBottomY();
+        List<ServerPlayerEntity> toTeleport = new ArrayList<>();
 
         for (ServerPlayerEntity player : backrooms.getPlayers()) {
             UUID id = player.getUuid();
             if (player.getY() < minY) {
                 int ticks = fallTicks.merge(id, 1, Integer::sum);
                 if (ticks >= TELEPORT_DELAY_TICKS) {
-                    teleportToOverworld(server, player);
+                    toTeleport.add(player);
                     fallTicks.remove(id);
                 }
             } else {
                 fallTicks.remove(id);
             }
+        }
+
+        // Teleport after finishing iteration over backrooms.getPlayers() -
+        // teleporting a player removes them from that list mid-iteration
+        // and previously caused a ConcurrentModificationException.
+        for (ServerPlayerEntity player : toTeleport) {
+            teleportToOverworld(server, player);
         }
 
         // Clean up entries for players who left the dimension or disconnected.
