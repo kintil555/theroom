@@ -1,7 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "start_pool": "backrooms:level0/rooms_upper",
-  "size": 40,
+  "size": 20,
   "max_distance_from_center": 100,
   "start_height": {
     "absolute": 50
