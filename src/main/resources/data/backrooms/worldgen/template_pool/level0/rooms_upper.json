@@ -172,6 +172,15 @@
         "projection": "rigid"
       },
       "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "backrooms:level0/room_upstairs",
+        "processors": "minecraft:empty",
+        "projection": "rigid"
+      },
+      "weight": 4
     }
   ]
 }
