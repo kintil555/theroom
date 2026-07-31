@@ -24,7 +24,11 @@ import java.util.Set;
  */
 public final class BackroomsCommand {
 
-    private static final Vec3d ENTER_POS = new Vec3d(9.5, 2.0, 9.5);
+    // Must stay in sync with "start_height.absolute" in
+    // data/backrooms/worldgen/structure/level0.json (currently 50).
+    // room_upstairs.nbt's floor sits at the structure's start Y, so entering
+    // players need to spawn on top of that floor, not at a hardcoded low Y.
+    private static final Vec3d ENTER_POS = new Vec3d(9.5, 51.0, 9.5);
 
     private BackroomsCommand() {
     }

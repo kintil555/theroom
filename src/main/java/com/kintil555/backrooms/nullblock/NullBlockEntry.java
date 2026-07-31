@@ -26,7 +26,9 @@ import java.util.Set;
  */
 public final class NullBlockEntry {
 
-    private static final Vec3d ENTER_POS = new Vec3d(9.5, 2.0, 9.5);
+    // Must stay in sync with "start_height.absolute" in
+    // data/backrooms/worldgen/structure/level0.json (currently 50).
+    private static final Vec3d ENTER_POS = new Vec3d(9.5, 51.0, 9.5);
 
     private NullBlockEntry() {
     }
